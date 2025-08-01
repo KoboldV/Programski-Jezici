@@ -1,0 +1,583 @@
+2025-08-01T15:24:47.999+02:00  INFO 23136 --- [RestStorage] [main] c.e.RestStorage.RestStorageApplication   : Starting RestStorageApplication using Java 17.0.12 with PID 23136 (D:\IntelliJProjects\Programski Jezici\RestStorage\target\classes started by kosta in D:\IntelliJProjects\Programski Jezici)
+2025-08-01T15:24:48.001+02:00  INFO 23136 --- [RestStorage] [main] c.e.RestStorage.RestStorageApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-01T15:24:48.295+02:00  INFO 23136 --- [RestStorage] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-01T15:24:48.325+02:00  INFO 23136 --- [RestStorage] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interface.
+2025-08-01T15:24:48.573+02:00  INFO 23136 --- [RestStorage] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-01T15:24:48.579+02:00  INFO 23136 --- [RestStorage] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-01T15:24:48.580+02:00  INFO 23136 --- [RestStorage] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-01T15:24:48.608+02:00  INFO 23136 --- [RestStorage] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-01T15:24:48.608+02:00  INFO 23136 --- [RestStorage] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 587 ms
+2025-08-01T15:24:48.695+02:00  INFO 23136 --- [RestStorage] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-01T15:24:48.721+02:00  INFO 23136 --- [RestStorage] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-01T15:24:48.739+02:00  INFO 23136 --- [RestStorage] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-01T15:24:48.869+02:00  INFO 23136 --- [RestStorage] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-01T15:24:48.884+02:00  INFO 23136 --- [RestStorage] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-01T15:24:48.970+02:00  INFO 23136 --- [RestStorage] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@9f0fc36
+2025-08-01T15:24:48.970+02:00  INFO 23136 --- [RestStorage] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-01T15:24:48.989+02:00  WARN 23136 --- [RestStorage] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-01T15:24:48.989+02:00  WARN 23136 --- [RestStorage] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-01T15:24:48.999+02:00  INFO 23136 --- [RestStorage] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-01T15:24:49.357+02:00  INFO 23136 --- [RestStorage] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-01T15:24:49.380+02:00  INFO 23136 --- [RestStorage] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-01T15:24:49.523+02:00  WARN 23136 --- [RestStorage] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-01T15:24:49.695+02:00  INFO 23136 --- [RestStorage] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-01T15:24:49.702+02:00  INFO 23136 --- [RestStorage] [main] c.e.RestStorage.RestStorageApplication   : Started RestStorageApplication in 1.976 seconds (process running for 2.158)
+2025-08-01T15:25:14.052+02:00  INFO 23136 --- [RestStorage] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-01T15:25:14.052+02:00  INFO 23136 --- [RestStorage] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-01T15:25:14.054+02:00  INFO 23136 --- [RestStorage] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-08-01T15:25:14.117+02:00  INFO 23136 --- [RestStorage] [http-nio-8080-exec-2] c.e.R.InventoryService.InventoryService  : Creating new item : Bravo can 0.33
+2025-08-01T15:28:01.199+02:00  INFO 23136 --- [RestStorage] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-01T15:28:01.226+02:00  INFO 23136 --- [RestStorage] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-01T15:28:01.227+02:00  INFO 23136 --- [RestStorage] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-01T15:28:01.228+02:00  INFO 23136 --- [RestStorage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-01T15:28:01.232+02:00  INFO 23136 --- [RestStorage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-01T15:28:57.156+02:00  INFO 16848 --- [RestStorage] [main] c.e.RestStorage.RestStorageApplication   : Starting RestStorageApplication using Java 17.0.12 with PID 16848 (D:\IntelliJProjects\Programski Jezici\RestStorage\target\classes started by kosta in D:\IntelliJProjects\Programski Jezici)
+2025-08-01T15:28:57.158+02:00  INFO 16848 --- [RestStorage] [main] c.e.RestStorage.RestStorageApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-01T15:28:57.456+02:00  INFO 16848 --- [RestStorage] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-01T15:28:57.488+02:00  INFO 16848 --- [RestStorage] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interface.
+2025-08-01T15:28:57.724+02:00  INFO 16848 --- [RestStorage] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-01T15:28:57.731+02:00  INFO 16848 --- [RestStorage] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-01T15:28:57.731+02:00  INFO 16848 --- [RestStorage] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-01T15:28:57.756+02:00  INFO 16848 --- [RestStorage] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-01T15:28:57.757+02:00  INFO 16848 --- [RestStorage] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 575 ms
+2025-08-01T15:28:57.848+02:00  INFO 16848 --- [RestStorage] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-01T15:28:57.874+02:00  INFO 16848 --- [RestStorage] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-01T15:28:57.892+02:00  INFO 16848 --- [RestStorage] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-01T15:28:58.027+02:00  INFO 16848 --- [RestStorage] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-01T15:28:58.043+02:00  INFO 16848 --- [RestStorage] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-01T15:28:58.126+02:00  INFO 16848 --- [RestStorage] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@10dfa7ef
+2025-08-01T15:28:58.126+02:00  INFO 16848 --- [RestStorage] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-01T15:28:58.146+02:00  WARN 16848 --- [RestStorage] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-01T15:28:58.146+02:00  WARN 16848 --- [RestStorage] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-01T15:28:58.156+02:00  INFO 16848 --- [RestStorage] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-01T15:28:58.506+02:00  INFO 16848 --- [RestStorage] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-01T15:28:58.530+02:00  INFO 16848 --- [RestStorage] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-01T15:28:58.673+02:00  WARN 16848 --- [RestStorage] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-01T15:28:58.843+02:00  INFO 16848 --- [RestStorage] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-01T15:28:58.850+02:00  INFO 16848 --- [RestStorage] [main] c.e.RestStorage.RestStorageApplication   : Started RestStorageApplication in 1.948 seconds (process running for 2.117)
+2025-08-01T15:29:01.783+02:00  INFO 16848 --- [RestStorage] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-01T15:29:01.783+02:00  INFO 16848 --- [RestStorage] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-01T15:29:01.783+02:00  INFO 16848 --- [RestStorage] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-08-01T15:29:01.839+02:00  INFO 16848 --- [RestStorage] [http-nio-8080-exec-2] c.e.R.InventoryService.InventoryService  : Creating new item : nullRX 6800XT 
+2025-08-01T15:29:29.214+02:00  INFO 16848 --- [RestStorage] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-01T15:29:29.242+02:00  INFO 16848 --- [RestStorage] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-01T15:29:29.243+02:00  INFO 16848 --- [RestStorage] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-01T15:29:29.244+02:00  INFO 16848 --- [RestStorage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-01T15:29:29.248+02:00  INFO 16848 --- [RestStorage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-01T15:30:08.916+02:00  INFO 24908 --- [RestStorage] [main] c.e.RestStorage.RestStorageApplication   : Starting RestStorageApplication using Java 17.0.12 with PID 24908 (D:\IntelliJProjects\Programski Jezici\RestStorage\target\classes started by kosta in D:\IntelliJProjects\Programski Jezici)
+2025-08-01T15:30:08.917+02:00  INFO 24908 --- [RestStorage] [main] c.e.RestStorage.RestStorageApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-01T15:30:09.216+02:00  INFO 24908 --- [RestStorage] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-01T15:30:09.248+02:00  INFO 24908 --- [RestStorage] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interface.
+2025-08-01T15:30:09.485+02:00  INFO 24908 --- [RestStorage] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-01T15:30:09.492+02:00  INFO 24908 --- [RestStorage] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-01T15:30:09.493+02:00  INFO 24908 --- [RestStorage] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-01T15:30:09.518+02:00  INFO 24908 --- [RestStorage] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-01T15:30:09.518+02:00  INFO 24908 --- [RestStorage] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 580 ms
+2025-08-01T15:30:09.604+02:00  INFO 24908 --- [RestStorage] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-01T15:30:09.629+02:00  INFO 24908 --- [RestStorage] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-01T15:30:09.646+02:00  INFO 24908 --- [RestStorage] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-01T15:30:09.781+02:00  INFO 24908 --- [RestStorage] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-01T15:30:09.798+02:00  INFO 24908 --- [RestStorage] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-01T15:30:09.879+02:00  INFO 24908 --- [RestStorage] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@9f0fc36
+2025-08-01T15:30:09.880+02:00  INFO 24908 --- [RestStorage] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-01T15:30:09.901+02:00  WARN 24908 --- [RestStorage] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-01T15:30:09.901+02:00  WARN 24908 --- [RestStorage] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-01T15:30:09.910+02:00  INFO 24908 --- [RestStorage] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-01T15:30:10.264+02:00  INFO 24908 --- [RestStorage] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-01T15:30:10.284+02:00  INFO 24908 --- [RestStorage] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-01T15:30:10.428+02:00  WARN 24908 --- [RestStorage] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-01T15:30:10.592+02:00  INFO 24908 --- [RestStorage] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-01T15:30:10.598+02:00  INFO 24908 --- [RestStorage] [main] c.e.RestStorage.RestStorageApplication   : Started RestStorageApplication in 1.924 seconds (process running for 2.094)
+2025-08-01T15:32:54.997+02:00  INFO 24908 --- [RestStorage] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-01T15:32:54.998+02:00  INFO 24908 --- [RestStorage] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-01T15:32:54.998+02:00  INFO 24908 --- [RestStorage] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-08-01T15:32:55.066+02:00  INFO 24908 --- [RestStorage] [http-nio-8080-exec-2] c.e.R.InventoryService.InventoryService  : Creating new item : RX 6800XTElectronics 
+2025-08-01T15:33:27.205+02:00  INFO 24908 --- [RestStorage] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-01T15:33:27.233+02:00  INFO 24908 --- [RestStorage] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-01T15:33:27.234+02:00  INFO 24908 --- [RestStorage] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-01T15:33:27.235+02:00  INFO 24908 --- [RestStorage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-01T15:33:27.238+02:00  INFO 24908 --- [RestStorage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-01T15:34:39.692+02:00  INFO 19832 --- [RestStorage] [main] c.e.RestStorage.RestStorageApplication   : Starting RestStorageApplication using Java 17.0.12 with PID 19832 (D:\IntelliJProjects\Programski Jezici\RestStorage\target\classes started by kosta in D:\IntelliJProjects\Programski Jezici)
+2025-08-01T15:34:39.694+02:00  INFO 19832 --- [RestStorage] [main] c.e.RestStorage.RestStorageApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-01T15:34:39.992+02:00  INFO 19832 --- [RestStorage] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-01T15:34:40.022+02:00  INFO 19832 --- [RestStorage] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interface.
+2025-08-01T15:34:40.261+02:00  INFO 19832 --- [RestStorage] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-01T15:34:40.269+02:00  INFO 19832 --- [RestStorage] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-01T15:34:40.269+02:00  INFO 19832 --- [RestStorage] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-01T15:34:40.293+02:00  INFO 19832 --- [RestStorage] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-01T15:34:40.293+02:00  INFO 19832 --- [RestStorage] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 579 ms
+2025-08-01T15:34:40.384+02:00  INFO 19832 --- [RestStorage] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-01T15:34:40.410+02:00  INFO 19832 --- [RestStorage] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-01T15:34:40.426+02:00  INFO 19832 --- [RestStorage] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-01T15:34:40.551+02:00  INFO 19832 --- [RestStorage] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-01T15:34:40.567+02:00  INFO 19832 --- [RestStorage] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-01T15:34:40.649+02:00  INFO 19832 --- [RestStorage] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4fd80300
+2025-08-01T15:34:40.650+02:00  INFO 19832 --- [RestStorage] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-01T15:34:40.669+02:00  WARN 19832 --- [RestStorage] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-01T15:34:40.669+02:00  WARN 19832 --- [RestStorage] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-01T15:34:40.678+02:00  INFO 19832 --- [RestStorage] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-01T15:34:41.026+02:00  INFO 19832 --- [RestStorage] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-01T15:34:41.047+02:00  INFO 19832 --- [RestStorage] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-01T15:34:41.193+02:00  WARN 19832 --- [RestStorage] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-01T15:34:41.367+02:00  INFO 19832 --- [RestStorage] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-01T15:34:41.375+02:00  INFO 19832 --- [RestStorage] [main] c.e.RestStorage.RestStorageApplication   : Started RestStorageApplication in 1.927 seconds (process running for 2.098)
+2025-08-01T15:34:44.525+02:00  INFO 19832 --- [RestStorage] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-01T15:34:44.551+02:00  INFO 19832 --- [RestStorage] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-01T15:34:44.552+02:00  INFO 19832 --- [RestStorage] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-01T15:34:44.553+02:00  INFO 19832 --- [RestStorage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-01T15:34:44.558+02:00  INFO 19832 --- [RestStorage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-01T15:36:18.464+02:00  INFO 9312 --- [RestStorage] [main] c.e.RestStorage.RestStorageApplication   : Starting RestStorageApplication using Java 17.0.12 with PID 9312 (D:\IntelliJProjects\Programski Jezici\RestStorage\target\classes started by kosta in D:\IntelliJProjects\Programski Jezici)
+2025-08-01T15:36:18.465+02:00  INFO 9312 --- [RestStorage] [main] c.e.RestStorage.RestStorageApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-01T15:36:18.769+02:00  INFO 9312 --- [RestStorage] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-01T15:36:18.804+02:00  INFO 9312 --- [RestStorage] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interface.
+2025-08-01T15:36:19.068+02:00  INFO 9312 --- [RestStorage] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-01T15:36:19.076+02:00  INFO 9312 --- [RestStorage] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-01T15:36:19.076+02:00  INFO 9312 --- [RestStorage] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-01T15:36:19.108+02:00  INFO 9312 --- [RestStorage] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-01T15:36:19.109+02:00  INFO 9312 --- [RestStorage] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 620 ms
+2025-08-01T15:36:19.199+02:00  INFO 9312 --- [RestStorage] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-01T15:36:19.224+02:00  INFO 9312 --- [RestStorage] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-01T15:36:19.243+02:00  INFO 9312 --- [RestStorage] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-01T15:36:19.377+02:00  INFO 9312 --- [RestStorage] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-01T15:36:19.394+02:00  INFO 9312 --- [RestStorage] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-01T15:36:19.481+02:00  INFO 9312 --- [RestStorage] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@352f6727
+2025-08-01T15:36:19.482+02:00  INFO 9312 --- [RestStorage] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-01T15:36:19.501+02:00  WARN 9312 --- [RestStorage] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-01T15:36:19.502+02:00  WARN 9312 --- [RestStorage] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-01T15:36:19.512+02:00  INFO 9312 --- [RestStorage] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-01T15:36:19.869+02:00  INFO 9312 --- [RestStorage] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-01T15:36:19.893+02:00  INFO 9312 --- [RestStorage] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-01T15:36:20.038+02:00  WARN 9312 --- [RestStorage] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-01T15:36:20.207+02:00  INFO 9312 --- [RestStorage] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-01T15:36:20.211+02:00  INFO 9312 --- [RestStorage] [main] c.e.RestStorage.RestStorageApplication   : Started RestStorageApplication in 1.992 seconds (process running for 2.169)
+2025-08-01T15:36:23.609+02:00  INFO 9312 --- [RestStorage] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-01T15:36:23.609+02:00  INFO 9312 --- [RestStorage] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-01T15:36:23.610+02:00  INFO 9312 --- [RestStorage] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-08-01T15:36:23.667+02:00  INFO 9312 --- [RestStorage] [http-nio-8080-exec-1] c.e.R.InventoryService.InventoryService  : Creating new item : RX 6800XT Electronics 
+2025-08-01T15:36:23.713+02:00  INFO 9312 --- [RestStorage] [http-nio-8080-exec-1] c.e.R.InventoryService.InventoryService  : Item saved: com.example.RestStorage.model.Inventory@174a5ee4
+2025-08-01T15:37:11.933+02:00  INFO 9312 --- [RestStorage] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-01T15:37:11.959+02:00  INFO 9312 --- [RestStorage] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-01T15:37:11.960+02:00  INFO 9312 --- [RestStorage] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-01T15:37:11.961+02:00  INFO 9312 --- [RestStorage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-01T15:37:11.964+02:00  INFO 9312 --- [RestStorage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-01T15:37:25.449+02:00  INFO 22368 --- [RestStorage] [main] c.e.RestStorage.RestStorageApplication   : Starting RestStorageApplication using Java 17.0.12 with PID 22368 (D:\IntelliJProjects\Programski Jezici\RestStorage\target\classes started by kosta in D:\IntelliJProjects\Programski Jezici)
+2025-08-01T15:37:25.451+02:00  INFO 22368 --- [RestStorage] [main] c.e.RestStorage.RestStorageApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-01T15:37:25.760+02:00  INFO 22368 --- [RestStorage] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-01T15:37:25.792+02:00  INFO 22368 --- [RestStorage] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interface.
+2025-08-01T15:37:26.032+02:00  INFO 22368 --- [RestStorage] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-01T15:37:26.039+02:00  INFO 22368 --- [RestStorage] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-01T15:37:26.039+02:00  INFO 22368 --- [RestStorage] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-01T15:37:26.064+02:00  INFO 22368 --- [RestStorage] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-01T15:37:26.064+02:00  INFO 22368 --- [RestStorage] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 590 ms
+2025-08-01T15:37:26.152+02:00  INFO 22368 --- [RestStorage] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-01T15:37:26.178+02:00  INFO 22368 --- [RestStorage] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-01T15:37:26.196+02:00  INFO 22368 --- [RestStorage] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-01T15:37:26.323+02:00  INFO 22368 --- [RestStorage] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-01T15:37:26.340+02:00  INFO 22368 --- [RestStorage] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-01T15:37:26.421+02:00  INFO 22368 --- [RestStorage] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7d88fa9c
+2025-08-01T15:37:26.421+02:00  INFO 22368 --- [RestStorage] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-01T15:37:26.440+02:00  WARN 22368 --- [RestStorage] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-01T15:37:26.440+02:00  WARN 22368 --- [RestStorage] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-01T15:37:26.449+02:00  INFO 22368 --- [RestStorage] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-01T15:37:26.799+02:00  INFO 22368 --- [RestStorage] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-01T15:37:26.821+02:00  INFO 22368 --- [RestStorage] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-01T15:37:26.963+02:00  WARN 22368 --- [RestStorage] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-01T15:37:27.130+02:00  INFO 22368 --- [RestStorage] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-01T15:37:27.136+02:00  INFO 22368 --- [RestStorage] [main] c.e.RestStorage.RestStorageApplication   : Started RestStorageApplication in 1.946 seconds (process running for 2.127)
+2025-08-01T15:37:33.489+02:00  INFO 22368 --- [RestStorage] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-01T15:37:33.489+02:00  INFO 22368 --- [RestStorage] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-01T15:37:33.490+02:00  INFO 22368 --- [RestStorage] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-01T15:37:33.552+02:00  INFO 22368 --- [RestStorage] [http-nio-8080-exec-2] c.e.R.InventoryService.InventoryService  : Creating new item : RX 6800XT Electronics 
+2025-08-01T15:37:33.612+02:00  INFO 22368 --- [RestStorage] [http-nio-8080-exec-2] c.e.R.InventoryService.InventoryService  : Item saved under ID : 21
+2025-08-01T15:37:59.322+02:00  INFO 22368 --- [RestStorage] [http-nio-8080-exec-4] c.e.R.InventoryService.InventoryService  : Creating new item : RX 6800XT Electronics 
+2025-08-01T15:37:59.322+02:00  WARN 22368 --- [RestStorage] [http-nio-8080-exec-4] c.e.R.InventoryService.InventoryService  : Tried to enter negativ number for count RX 6800XT
+2025-08-01T15:38:21.699+02:00  INFO 22368 --- [RestStorage] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-01T15:38:21.728+02:00  INFO 22368 --- [RestStorage] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-01T15:38:21.730+02:00  INFO 22368 --- [RestStorage] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-01T15:38:21.731+02:00  INFO 22368 --- [RestStorage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-01T15:38:21.735+02:00  INFO 22368 --- [RestStorage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-01T15:42:57.190+02:00  INFO 18716 --- [RestStorage] [main] c.e.RestStorage.RestStorageApplication   : Starting RestStorageApplication using Java 17.0.12 with PID 18716 (D:\IntelliJProjects\Programski Jezici\RestStorage\target\classes started by kosta in D:\IntelliJProjects\Programski Jezici)
+2025-08-01T15:42:57.192+02:00  INFO 18716 --- [RestStorage] [main] c.e.RestStorage.RestStorageApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-01T15:42:57.518+02:00  INFO 18716 --- [RestStorage] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-01T15:42:57.551+02:00  INFO 18716 --- [RestStorage] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interface.
+2025-08-01T15:42:57.801+02:00  INFO 18716 --- [RestStorage] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-01T15:42:57.808+02:00  INFO 18716 --- [RestStorage] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-01T15:42:57.808+02:00  INFO 18716 --- [RestStorage] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-01T15:42:57.839+02:00  INFO 18716 --- [RestStorage] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-01T15:42:57.840+02:00  INFO 18716 --- [RestStorage] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 627 ms
+2025-08-01T15:42:57.938+02:00  INFO 18716 --- [RestStorage] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-01T15:42:57.964+02:00  INFO 18716 --- [RestStorage] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-01T15:42:57.981+02:00  INFO 18716 --- [RestStorage] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-01T15:42:58.125+02:00  INFO 18716 --- [RestStorage] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-01T15:42:58.141+02:00  INFO 18716 --- [RestStorage] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-01T15:42:58.226+02:00  INFO 18716 --- [RestStorage] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@286866cb
+2025-08-01T15:42:58.227+02:00  INFO 18716 --- [RestStorage] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-01T15:42:58.247+02:00  WARN 18716 --- [RestStorage] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-01T15:42:58.247+02:00  WARN 18716 --- [RestStorage] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-01T15:42:58.257+02:00  INFO 18716 --- [RestStorage] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-01T15:42:58.610+02:00  INFO 18716 --- [RestStorage] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-01T15:42:58.633+02:00  INFO 18716 --- [RestStorage] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-01T15:42:58.778+02:00  WARN 18716 --- [RestStorage] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-01T15:42:58.966+02:00  INFO 18716 --- [RestStorage] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-01T15:42:58.971+02:00  INFO 18716 --- [RestStorage] [main] c.e.RestStorage.RestStorageApplication   : Started RestStorageApplication in 2.038 seconds (process running for 2.225)
+2025-08-01T15:43:20.092+02:00  INFO 18716 --- [RestStorage] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-01T15:43:20.092+02:00  INFO 18716 --- [RestStorage] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-01T15:43:20.093+02:00  INFO 18716 --- [RestStorage] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-01T15:43:20.149+02:00  INFO 18716 --- [RestStorage] [http-nio-8080-exec-1] c.e.R.InventoryService.InventoryService  : Creating new item : RX 6800XT Electronics 
+2025-08-01T15:43:20.149+02:00  WARN 18716 --- [RestStorage] [http-nio-8080-exec-1] c.e.R.InventoryService.InventoryService  : Tried to enter negativ number for count RX 6800XT
+2025-08-01T15:43:26.661+02:00  INFO 18716 --- [RestStorage] [http-nio-8080-exec-4] c.e.R.InventoryService.InventoryService  : Creating new item : RX 6800XT Electronics 
+2025-08-01T15:43:26.712+02:00  INFO 18716 --- [RestStorage] [http-nio-8080-exec-4] c.e.R.InventoryService.InventoryService  : Item saved under ID : 22
+2025-08-01T15:43:48.103+02:00  INFO 18716 --- [RestStorage] [http-nio-8080-exec-5] c.e.R.InventoryService.InventoryService  : Searching
+2025-08-01T15:45:01.854+02:00  INFO 18716 --- [RestStorage] [http-nio-8080-exec-8] c.e.R.InventoryService.InventoryService  : Searching
+2025-08-01T15:45:01.857+02:00  INFO 18716 --- [RestStorage] [http-nio-8080-exec-8] c.e.R.InventoryService.InventoryService  : Deleted an item: 21
+2025-08-01T15:46:50.683+02:00  INFO 18716 --- [RestStorage] [http-nio-8080-exec-1] c.e.R.InventoryService.InventoryService  : Displaying all items in the database 
+2025-08-01T15:47:09.183+02:00  INFO 18716 --- [RestStorage] [http-nio-8080-exec-3] c.e.R.InventoryService.InventoryService  : Searching for all items that belong to: ele
+2025-08-01T15:47:33.283+02:00  INFO 18716 --- [RestStorage] [http-nio-8080-exec-4] c.e.R.InventoryService.InventoryService  : Displaying all items in the database 
+2025-08-01T15:47:45.270+02:00  INFO 18716 --- [RestStorage] [http-nio-8080-exec-5] c.e.R.InventoryService.InventoryService  : Displaying all items in the database 
+2025-08-01T15:48:02.757+02:00  INFO 18716 --- [RestStorage] [http-nio-8080-exec-6] c.e.R.InventoryService.InventoryService  : Searching for an item : airmax
+2025-08-01T15:48:21.336+02:00  INFO 18716 --- [RestStorage] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-01T15:48:21.363+02:00  INFO 18716 --- [RestStorage] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-01T15:48:21.364+02:00  INFO 18716 --- [RestStorage] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-01T15:48:21.365+02:00  INFO 18716 --- [RestStorage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-01T15:48:21.369+02:00  INFO 18716 --- [RestStorage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-01T16:55:49.242+02:00  INFO 13968 --- [RestStorage] [main] c.e.RestStorage.RestStorageApplication   : Starting RestStorageApplication using Java 17.0.12 with PID 13968 (D:\IntelliJProjects\Programski Jezici\RestStorage\target\classes started by kosta in D:\IntelliJProjects\Programski Jezici)
+2025-08-01T16:55:49.246+02:00  INFO 13968 --- [RestStorage] [main] c.e.RestStorage.RestStorageApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-01T16:55:49.563+02:00  INFO 13968 --- [RestStorage] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-01T16:55:49.596+02:00  INFO 13968 --- [RestStorage] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interface.
+2025-08-01T16:55:49.862+02:00  INFO 13968 --- [RestStorage] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-01T16:55:49.869+02:00  INFO 13968 --- [RestStorage] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-01T16:55:49.869+02:00  INFO 13968 --- [RestStorage] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-01T16:55:49.903+02:00  INFO 13968 --- [RestStorage] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-01T16:55:49.903+02:00  INFO 13968 --- [RestStorage] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 632 ms
+2025-08-01T16:55:49.993+02:00  INFO 13968 --- [RestStorage] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-01T16:55:50.021+02:00  INFO 13968 --- [RestStorage] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-01T16:55:50.041+02:00  INFO 13968 --- [RestStorage] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-01T16:55:50.180+02:00  INFO 13968 --- [RestStorage] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-01T16:55:50.194+02:00  INFO 13968 --- [RestStorage] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-01T16:55:50.280+02:00  INFO 13968 --- [RestStorage] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1805383
+2025-08-01T16:55:50.281+02:00  INFO 13968 --- [RestStorage] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-01T16:55:50.302+02:00  WARN 13968 --- [RestStorage] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-01T16:55:50.302+02:00  WARN 13968 --- [RestStorage] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-01T16:55:50.313+02:00  INFO 13968 --- [RestStorage] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-01T16:55:50.695+02:00  INFO 13968 --- [RestStorage] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-01T16:55:50.721+02:00  INFO 13968 --- [RestStorage] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-01T16:55:50.877+02:00  WARN 13968 --- [RestStorage] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-01T16:55:51.059+02:00  INFO 13968 --- [RestStorage] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-01T16:55:51.065+02:00  INFO 13968 --- [RestStorage] [main] c.e.RestStorage.RestStorageApplication   : Started RestStorageApplication in 2.097 seconds (process running for 2.29)
+2025-08-01T16:56:05.708+02:00  INFO 13968 --- [RestStorage] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-01T16:56:05.708+02:00  INFO 13968 --- [RestStorage] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-01T16:56:05.709+02:00  INFO 13968 --- [RestStorage] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-01T16:56:05.721+02:00  WARN 13968 --- [RestStorage] [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2025-08-01T16:56:17.051+02:00  INFO 13968 --- [RestStorage] [http-nio-8080-exec-3] c.e.R.InventoryService.InventoryService  : Creating new item : RX 6800XT Electronics 
+2025-08-01T16:56:17.052+02:00  WARN 13968 --- [RestStorage] [http-nio-8080-exec-3] c.e.R.InventoryService.InventoryService  : Tried to enter negativ number for count RX 6800XT
+2025-08-01T17:05:29.386+02:00  INFO 13968 --- [RestStorage] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-01T17:05:29.415+02:00  INFO 13968 --- [RestStorage] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-01T17:05:29.416+02:00  INFO 13968 --- [RestStorage] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-01T17:05:29.417+02:00  INFO 13968 --- [RestStorage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-01T17:05:29.421+02:00  INFO 13968 --- [RestStorage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-01T17:05:40.637+02:00  INFO 5776 --- [RestStorage] [main] c.e.RestStorage.RestStorageApplication   : Starting RestStorageApplication using Java 17.0.12 with PID 5776 (D:\IntelliJProjects\Programski Jezici\RestStorage\target\classes started by kosta in D:\IntelliJProjects\Programski Jezici)
+2025-08-01T17:05:40.640+02:00  INFO 5776 --- [RestStorage] [main] c.e.RestStorage.RestStorageApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-01T17:05:40.969+02:00  INFO 5776 --- [RestStorage] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-01T17:05:41.003+02:00  INFO 5776 --- [RestStorage] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interface.
+2025-08-01T17:05:41.273+02:00  INFO 5776 --- [RestStorage] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-01T17:05:41.282+02:00  INFO 5776 --- [RestStorage] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-01T17:05:41.282+02:00  INFO 5776 --- [RestStorage] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-01T17:05:41.315+02:00  INFO 5776 --- [RestStorage] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-01T17:05:41.315+02:00  INFO 5776 --- [RestStorage] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 650 ms
+2025-08-01T17:05:41.419+02:00  INFO 5776 --- [RestStorage] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-01T17:05:41.447+02:00  INFO 5776 --- [RestStorage] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-01T17:05:41.467+02:00  INFO 5776 --- [RestStorage] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-01T17:05:41.615+02:00  INFO 5776 --- [RestStorage] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-01T17:05:41.632+02:00  INFO 5776 --- [RestStorage] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-01T17:05:41.727+02:00  INFO 5776 --- [RestStorage] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@14b95942
+2025-08-01T17:05:41.728+02:00  INFO 5776 --- [RestStorage] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-01T17:05:41.750+02:00  WARN 5776 --- [RestStorage] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-01T17:05:41.750+02:00  WARN 5776 --- [RestStorage] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-01T17:05:41.762+02:00  INFO 5776 --- [RestStorage] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-01T17:05:42.152+02:00  INFO 5776 --- [RestStorage] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-01T17:05:42.176+02:00  INFO 5776 --- [RestStorage] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-01T17:05:42.330+02:00  WARN 5776 --- [RestStorage] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-01T17:05:42.521+02:00  INFO 5776 --- [RestStorage] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-01T17:05:42.528+02:00  INFO 5776 --- [RestStorage] [main] c.e.RestStorage.RestStorageApplication   : Started RestStorageApplication in 2.165 seconds (process running for 2.348)
+2025-08-01T17:05:49.370+02:00  INFO 5776 --- [RestStorage] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-01T17:05:49.370+02:00  INFO 5776 --- [RestStorage] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-01T17:05:49.372+02:00  INFO 5776 --- [RestStorage] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-08-01T17:05:49.392+02:00  INFO 5776 --- [RestStorage] [http-nio-8080-exec-2] c.e.R.InventoryService.InventoryService  : Displaying all items in the database 
+2025-08-01T17:06:15.074+02:00  INFO 5776 --- [RestStorage] [http-nio-8080-exec-3] c.e.R.InventoryService.InventoryService  : Searching for an item under ID: 20
+2025-08-01T17:06:15.081+02:00  INFO 5776 --- [RestStorage] [http-nio-8080-exec-3] c.e.R.InventoryService.InventoryService  : Creating new item : Kemix Electronics 
+2025-08-01T17:06:15.113+02:00  INFO 5776 --- [RestStorage] [http-nio-8080-exec-3] c.e.R.InventoryService.InventoryService  : Item saved under ID : 23
+2025-08-01T17:06:31.317+02:00  INFO 5776 --- [RestStorage] [http-nio-8080-exec-4] c.e.R.InventoryService.InventoryService  : Searching for an item under ID: 20
+2025-08-01T17:06:35.378+02:00  INFO 5776 --- [RestStorage] [http-nio-8080-exec-5] c.e.R.InventoryService.InventoryService  : Displaying all items in the database 
+2025-08-01T17:06:53.611+02:00  INFO 5776 --- [RestStorage] [http-nio-8080-exec-6] c.e.R.InventoryService.InventoryService  : Searching for an item under ID: 20
+2025-08-01T17:06:53.613+02:00  INFO 5776 --- [RestStorage] [http-nio-8080-exec-6] c.e.R.InventoryService.InventoryService  : Creating new item : Kemix Electronics 
+2025-08-01T17:06:53.629+02:00  INFO 5776 --- [RestStorage] [http-nio-8080-exec-6] c.e.R.InventoryService.InventoryService  : Item saved under ID : 24
+2025-08-01T17:08:30.092+02:00  INFO 5776 --- [RestStorage] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-01T17:08:30.119+02:00  INFO 5776 --- [RestStorage] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-01T17:08:30.120+02:00  INFO 5776 --- [RestStorage] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-01T17:08:30.121+02:00  INFO 5776 --- [RestStorage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-01T17:08:30.124+02:00  INFO 5776 --- [RestStorage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-01T17:08:37.974+02:00  INFO 21008 --- [RestStorage] [main] c.e.RestStorage.RestStorageApplication   : Starting RestStorageApplication using Java 17.0.12 with PID 21008 (D:\IntelliJProjects\Programski Jezici\RestStorage\target\classes started by kosta in D:\IntelliJProjects\Programski Jezici)
+2025-08-01T17:08:37.976+02:00  INFO 21008 --- [RestStorage] [main] c.e.RestStorage.RestStorageApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-01T17:08:38.306+02:00  INFO 21008 --- [RestStorage] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-01T17:08:38.343+02:00  INFO 21008 --- [RestStorage] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interface.
+2025-08-01T17:08:38.615+02:00  INFO 21008 --- [RestStorage] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-01T17:08:38.623+02:00  INFO 21008 --- [RestStorage] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-01T17:08:38.623+02:00  INFO 21008 --- [RestStorage] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-01T17:08:38.658+02:00  INFO 21008 --- [RestStorage] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-01T17:08:38.658+02:00  INFO 21008 --- [RestStorage] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 661 ms
+2025-08-01T17:08:38.750+02:00  INFO 21008 --- [RestStorage] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-01T17:08:38.775+02:00  INFO 21008 --- [RestStorage] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-01T17:08:38.793+02:00  INFO 21008 --- [RestStorage] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-01T17:08:38.930+02:00  INFO 21008 --- [RestStorage] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-01T17:08:38.948+02:00  INFO 21008 --- [RestStorage] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-01T17:08:39.034+02:00  INFO 21008 --- [RestStorage] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c34402
+2025-08-01T17:08:39.035+02:00  INFO 21008 --- [RestStorage] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-01T17:08:39.059+02:00  WARN 21008 --- [RestStorage] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-01T17:08:39.060+02:00  WARN 21008 --- [RestStorage] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-01T17:08:39.071+02:00  INFO 21008 --- [RestStorage] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-01T17:08:39.453+02:00  INFO 21008 --- [RestStorage] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-01T17:08:39.477+02:00  INFO 21008 --- [RestStorage] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-01T17:08:39.628+02:00  WARN 21008 --- [RestStorage] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-01T17:08:39.813+02:00  INFO 21008 --- [RestStorage] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-01T17:08:39.820+02:00  INFO 21008 --- [RestStorage] [main] c.e.RestStorage.RestStorageApplication   : Started RestStorageApplication in 2.101 seconds (process running for 2.28)
+2025-08-01T17:08:47.705+02:00  INFO 21008 --- [RestStorage] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-01T17:08:47.705+02:00  INFO 21008 --- [RestStorage] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-01T17:08:47.706+02:00  INFO 21008 --- [RestStorage] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-01T17:08:47.775+02:00  INFO 21008 --- [RestStorage] [http-nio-8080-exec-1] c.e.R.InventoryService.InventoryService  : Searching for an item under ID: 20
+2025-08-01T17:08:47.821+02:00  INFO 21008 --- [RestStorage] [http-nio-8080-exec-1] c.e.R.InventoryService.InventoryService  : Creating new item : Kemix Electronics 
+2025-08-01T17:08:47.854+02:00  INFO 21008 --- [RestStorage] [http-nio-8080-exec-1] c.e.R.InventoryService.InventoryService  : Item saved under ID : 20
+2025-08-01T17:08:53.903+02:00  INFO 21008 --- [RestStorage] [http-nio-8080-exec-3] c.e.R.InventoryService.InventoryService  : Searching for an item under ID: 27
+2025-08-01T17:12:09.642+02:00  INFO 21008 --- [RestStorage] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-01T17:12:09.669+02:00  INFO 21008 --- [RestStorage] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-01T17:12:09.671+02:00  INFO 21008 --- [RestStorage] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-01T17:12:09.672+02:00  INFO 21008 --- [RestStorage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-01T17:12:09.675+02:00  INFO 21008 --- [RestStorage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-01T17:12:18.639+02:00  INFO 9272 --- [RestStorage] [main] c.e.RestStorage.RestStorageApplication   : Starting RestStorageApplication using Java 17.0.12 with PID 9272 (D:\IntelliJProjects\Programski Jezici\RestStorage\target\classes started by kosta in D:\IntelliJProjects\Programski Jezici)
+2025-08-01T17:12:18.640+02:00  INFO 9272 --- [RestStorage] [main] c.e.RestStorage.RestStorageApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-01T17:12:18.956+02:00  INFO 9272 --- [RestStorage] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-01T17:12:18.990+02:00  INFO 9272 --- [RestStorage] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interface.
+2025-08-01T17:12:19.253+02:00  INFO 9272 --- [RestStorage] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-01T17:12:19.260+02:00  INFO 9272 --- [RestStorage] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-01T17:12:19.260+02:00  INFO 9272 --- [RestStorage] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-01T17:12:19.288+02:00  INFO 9272 --- [RestStorage] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-01T17:12:19.288+02:00  INFO 9272 --- [RestStorage] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 624 ms
+2025-08-01T17:12:19.383+02:00  INFO 9272 --- [RestStorage] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-01T17:12:19.409+02:00  INFO 9272 --- [RestStorage] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-01T17:12:19.428+02:00  INFO 9272 --- [RestStorage] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-01T17:12:19.564+02:00  INFO 9272 --- [RestStorage] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-01T17:12:19.584+02:00  INFO 9272 --- [RestStorage] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-01T17:12:19.675+02:00  INFO 9272 --- [RestStorage] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@352f6727
+2025-08-01T17:12:19.676+02:00  INFO 9272 --- [RestStorage] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-01T17:12:19.697+02:00  WARN 9272 --- [RestStorage] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-01T17:12:19.698+02:00  WARN 9272 --- [RestStorage] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-01T17:12:19.708+02:00  INFO 9272 --- [RestStorage] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-01T17:12:20.097+02:00  INFO 9272 --- [RestStorage] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-01T17:12:20.122+02:00  INFO 9272 --- [RestStorage] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-01T17:12:20.278+02:00  WARN 9272 --- [RestStorage] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-01T17:12:20.458+02:00  INFO 9272 --- [RestStorage] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-01T17:12:20.465+02:00  INFO 9272 --- [RestStorage] [main] c.e.RestStorage.RestStorageApplication   : Started RestStorageApplication in 2.084 seconds (process running for 2.274)
+2025-08-01T17:12:26.772+02:00  INFO 9272 --- [RestStorage] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-01T17:12:26.772+02:00  INFO 9272 --- [RestStorage] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-01T17:12:26.774+02:00  INFO 9272 --- [RestStorage] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-08-01T17:12:26.841+02:00  INFO 9272 --- [RestStorage] [http-nio-8080-exec-3] c.e.R.InventoryService.InventoryService  : Searching for an item under ID: 19
+2025-08-01T17:12:26.884+02:00  INFO 9272 --- [RestStorage] [http-nio-8080-exec-3] c.e.R.controller.InventoryController     : Updated item with ID : null
+2025-08-01T17:12:26.884+02:00  INFO 9272 --- [RestStorage] [http-nio-8080-exec-3] c.e.R.InventoryService.InventoryService  : Creating new item : Kemix Electronics 
+2025-08-01T17:12:26.913+02:00  INFO 9272 --- [RestStorage] [http-nio-8080-exec-3] c.e.R.InventoryService.InventoryService  : Item saved under ID : 19
+2025-08-01T17:12:49.255+02:00  INFO 9272 --- [RestStorage] [http-nio-8080-exec-2] c.e.R.InventoryService.InventoryService  : Searching for an item under ID: 19
+2025-08-01T17:12:49.257+02:00  INFO 9272 --- [RestStorage] [http-nio-8080-exec-2] c.e.R.controller.InventoryController     : Updated item with ID : null
+2025-08-01T17:12:49.257+02:00  INFO 9272 --- [RestStorage] [http-nio-8080-exec-2] c.e.R.InventoryService.InventoryService  : Creating new item : Kemix Electronics 
+2025-08-01T17:12:49.258+02:00  INFO 9272 --- [RestStorage] [http-nio-8080-exec-2] c.e.R.InventoryService.InventoryService  : Item saved under ID : 19
+2025-08-01T17:14:02.409+02:00  INFO 9272 --- [RestStorage] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-01T17:14:02.436+02:00  INFO 9272 --- [RestStorage] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-01T17:14:02.438+02:00  INFO 9272 --- [RestStorage] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-01T17:14:02.438+02:00  INFO 9272 --- [RestStorage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-01T17:14:02.442+02:00  INFO 9272 --- [RestStorage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-01T17:14:08.473+02:00  INFO 2820 --- [RestStorage] [main] c.e.RestStorage.RestStorageApplication   : Starting RestStorageApplication using Java 17.0.12 with PID 2820 (D:\IntelliJProjects\Programski Jezici\RestStorage\target\classes started by kosta in D:\IntelliJProjects\Programski Jezici)
+2025-08-01T17:14:08.474+02:00  INFO 2820 --- [RestStorage] [main] c.e.RestStorage.RestStorageApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-01T17:14:08.785+02:00  INFO 2820 --- [RestStorage] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-01T17:14:08.816+02:00  INFO 2820 --- [RestStorage] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interface.
+2025-08-01T17:14:09.103+02:00  INFO 2820 --- [RestStorage] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-01T17:14:09.111+02:00  INFO 2820 --- [RestStorage] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-01T17:14:09.111+02:00  INFO 2820 --- [RestStorage] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-01T17:14:09.147+02:00  INFO 2820 --- [RestStorage] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-01T17:14:09.148+02:00  INFO 2820 --- [RestStorage] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 650 ms
+2025-08-01T17:14:09.246+02:00  INFO 2820 --- [RestStorage] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-01T17:14:09.273+02:00  INFO 2820 --- [RestStorage] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-01T17:14:09.292+02:00  INFO 2820 --- [RestStorage] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-01T17:14:09.437+02:00  INFO 2820 --- [RestStorage] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-01T17:14:09.455+02:00  INFO 2820 --- [RestStorage] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-01T17:14:09.551+02:00  INFO 2820 --- [RestStorage] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a06904
+2025-08-01T17:14:09.552+02:00  INFO 2820 --- [RestStorage] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-01T17:14:09.575+02:00  WARN 2820 --- [RestStorage] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-01T17:14:09.577+02:00  WARN 2820 --- [RestStorage] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-01T17:14:09.587+02:00  INFO 2820 --- [RestStorage] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-01T17:14:09.982+02:00  INFO 2820 --- [RestStorage] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-01T17:14:10.007+02:00  INFO 2820 --- [RestStorage] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-01T17:14:10.155+02:00  WARN 2820 --- [RestStorage] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-01T17:14:10.344+02:00  INFO 2820 --- [RestStorage] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-01T17:14:10.351+02:00  INFO 2820 --- [RestStorage] [main] c.e.RestStorage.RestStorageApplication   : Started RestStorageApplication in 2.138 seconds (process running for 2.314)
+2025-08-01T17:14:12.768+02:00  INFO 2820 --- [RestStorage] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-01T17:14:12.768+02:00  INFO 2820 --- [RestStorage] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-01T17:14:12.770+02:00  INFO 2820 --- [RestStorage] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-08-01T17:14:12.828+02:00  INFO 2820 --- [RestStorage] [http-nio-8080-exec-2] c.e.R.InventoryService.InventoryService  : Searching for an item under ID: 19
+2025-08-01T17:14:12.867+02:00  INFO 2820 --- [RestStorage] [http-nio-8080-exec-2] c.e.R.controller.InventoryController     : Updated item with name  : 19
+2025-08-01T17:14:12.868+02:00  INFO 2820 --- [RestStorage] [http-nio-8080-exec-2] c.e.R.InventoryService.InventoryService  : Creating new item : Kemix Electronics 
+2025-08-01T17:14:12.876+02:00  INFO 2820 --- [RestStorage] [http-nio-8080-exec-2] c.e.R.InventoryService.InventoryService  : Item saved under ID : 19
+2025-08-01T17:14:44.945+02:00  INFO 2820 --- [RestStorage] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-01T17:14:44.972+02:00  INFO 2820 --- [RestStorage] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-01T17:14:44.973+02:00  INFO 2820 --- [RestStorage] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-01T17:14:44.974+02:00  INFO 2820 --- [RestStorage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-01T17:14:44.978+02:00  INFO 2820 --- [RestStorage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-01T17:47:50.264+02:00  INFO 11972 --- [RestStorage] [main] c.e.RestStorage.RestStorageApplication   : Starting RestStorageApplication using Java 17.0.12 with PID 11972 (D:\IntelliJProjects\Programski Jezici\RestStorage\target\classes started by kosta in D:\IntelliJProjects\Programski Jezici)
+2025-08-01T17:47:50.265+02:00  INFO 11972 --- [RestStorage] [main] c.e.RestStorage.RestStorageApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-01T17:47:50.574+02:00  INFO 11972 --- [RestStorage] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-01T17:47:50.607+02:00  INFO 11972 --- [RestStorage] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interface.
+2025-08-01T17:47:50.866+02:00  INFO 11972 --- [RestStorage] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-01T17:47:50.873+02:00  INFO 11972 --- [RestStorage] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-01T17:47:50.873+02:00  INFO 11972 --- [RestStorage] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-01T17:47:50.904+02:00  INFO 11972 --- [RestStorage] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-01T17:47:50.905+02:00  INFO 11972 --- [RestStorage] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 617 ms
+2025-08-01T17:47:50.990+02:00  INFO 11972 --- [RestStorage] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-01T17:47:51.014+02:00  INFO 11972 --- [RestStorage] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-01T17:47:51.032+02:00  INFO 11972 --- [RestStorage] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-01T17:47:51.174+02:00  INFO 11972 --- [RestStorage] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-01T17:47:51.191+02:00  INFO 11972 --- [RestStorage] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-01T17:47:51.273+02:00  INFO 11972 --- [RestStorage] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7d88fa9c
+2025-08-01T17:47:51.275+02:00  INFO 11972 --- [RestStorage] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-01T17:47:51.295+02:00  WARN 11972 --- [RestStorage] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-01T17:47:51.296+02:00  WARN 11972 --- [RestStorage] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-01T17:47:51.306+02:00  INFO 11972 --- [RestStorage] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-01T17:47:51.675+02:00  INFO 11972 --- [RestStorage] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-01T17:47:51.698+02:00  INFO 11972 --- [RestStorage] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-01T17:47:51.844+02:00  WARN 11972 --- [RestStorage] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-01T17:47:52.025+02:00  INFO 11972 --- [RestStorage] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-01T17:47:52.033+02:00  INFO 11972 --- [RestStorage] [main] c.e.RestStorage.RestStorageApplication   : Started RestStorageApplication in 2.028 seconds (process running for 2.206)
+2025-08-01T17:48:00.365+02:00  INFO 11972 --- [RestStorage] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-01T17:48:00.366+02:00  INFO 11972 --- [RestStorage] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-01T17:48:00.366+02:00  INFO 11972 --- [RestStorage] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-08-01T17:48:00.384+02:00  INFO 11972 --- [RestStorage] [http-nio-8080-exec-2] c.e.R.InventoryService.InventoryService  : Displaying all items in the database 
+2025-08-01T17:48:07.205+02:00  INFO 11972 --- [RestStorage] [http-nio-8080-exec-3] c.e.R.InventoryService.InventoryService  : Searching for an item under ID: 12
+2025-08-01T17:48:22.559+02:00  INFO 11972 --- [RestStorage] [http-nio-8080-exec-4] c.e.R.InventoryService.InventoryService  : Searching for an item : airmax
+2025-08-01T17:48:26.896+02:00  INFO 11972 --- [RestStorage] [http-nio-8080-exec-5] c.e.R.InventoryService.InventoryService  : Searching for an item : air
+2025-08-01T17:48:29.463+02:00  INFO 11972 --- [RestStorage] [http-nio-8080-exec-6] c.e.R.InventoryService.InventoryService  : Searching for an item : a
+2025-08-01T17:48:40.774+02:00  INFO 11972 --- [RestStorage] [http-nio-8080-exec-7] c.e.R.InventoryService.InventoryService  : Searching for all items that belong to: electronics
+2025-08-01T17:49:11.658+02:00  INFO 11972 --- [RestStorage] [http-nio-8080-exec-8] c.e.R.InventoryService.InventoryService  : Searching for an item under ID: 21
+2025-08-01T17:50:25.850+02:00  INFO 11972 --- [RestStorage] [http-nio-8080-exec-5] c.e.R.InventoryService.InventoryService  : Searching for an item under ID: 22
+2025-08-01T17:50:25.852+02:00  INFO 11972 --- [RestStorage] [http-nio-8080-exec-5] c.e.R.controller.InventoryController     : Updated item with ID  : 22
+2025-08-01T17:50:25.852+02:00  INFO 11972 --- [RestStorage] [http-nio-8080-exec-5] c.e.R.InventoryService.InventoryService  : Creating new item : Gaski Najjaci 
+2025-08-01T17:50:25.852+02:00  WARN 11972 --- [RestStorage] [http-nio-8080-exec-5] c.e.R.InventoryService.InventoryService  : Tried to enter negativ number for count Gaski
+2025-08-01T17:51:12.748+02:00  INFO 11972 --- [RestStorage] [http-nio-8080-exec-7] c.e.R.InventoryService.InventoryService  : Searching for an item under ID: 22
+2025-08-01T17:51:12.750+02:00  INFO 11972 --- [RestStorage] [http-nio-8080-exec-7] c.e.R.controller.InventoryController     : Updated item with ID  : 22
+2025-08-01T17:51:12.750+02:00  INFO 11972 --- [RestStorage] [http-nio-8080-exec-7] c.e.R.InventoryService.InventoryService  : Creating new item : Gaski  
+2025-08-01T17:51:18.893+02:00  INFO 11972 --- [RestStorage] [http-nio-8080-exec-9] c.e.R.InventoryService.InventoryService  : Searching for an item under ID: 22
+2025-08-01T17:51:18.896+02:00  INFO 11972 --- [RestStorage] [http-nio-8080-exec-9] c.e.R.controller.InventoryController     : Updated item with ID  : 22
+2025-08-01T17:51:18.896+02:00  INFO 11972 --- [RestStorage] [http-nio-8080-exec-9] c.e.R.InventoryService.InventoryService  : Creating new item : Gaski    
+2025-08-01T17:51:25.827+02:00  INFO 11972 --- [RestStorage] [http-nio-8080-exec-1] c.e.R.InventoryService.InventoryService  : Searching for an item under ID: 22
+2025-08-01T17:51:25.829+02:00  INFO 11972 --- [RestStorage] [http-nio-8080-exec-1] c.e.R.controller.InventoryController     : Updated item with ID  : 22
+2025-08-01T17:51:25.829+02:00  INFO 11972 --- [RestStorage] [http-nio-8080-exec-1] c.e.R.InventoryService.InventoryService  : Creating new item : Gaski  
+2025-08-01T17:51:30.177+02:00  INFO 11972 --- [RestStorage] [http-nio-8080-exec-3] c.e.R.InventoryService.InventoryService  : Searching for an item under ID: 22
+2025-08-01T17:51:30.178+02:00  INFO 11972 --- [RestStorage] [http-nio-8080-exec-3] c.e.R.controller.InventoryController     : Updated item with ID  : 22
+2025-08-01T17:51:30.179+02:00  INFO 11972 --- [RestStorage] [http-nio-8080-exec-3] c.e.R.InventoryService.InventoryService  : Creating new item :   
+2025-08-01T17:55:21.218+02:00  INFO 11972 --- [RestStorage] [http-nio-8080-exec-7] c.e.R.InventoryService.InventoryService  : Displaying all items in the database 
+2025-08-01T17:56:02.533+02:00  INFO 11972 --- [RestStorage] [http-nio-8080-exec-8] c.e.R.InventoryService.InventoryService  : Searching for an item under ID: 23
+2025-08-01T17:56:02.536+02:00  INFO 11972 --- [RestStorage] [http-nio-8080-exec-8] c.e.R.controller.InventoryController     : Updated item with ID  : 23
+2025-08-01T17:56:02.537+02:00  INFO 11972 --- [RestStorage] [http-nio-8080-exec-8] c.e.R.InventoryService.InventoryService  : Creating new item : Gaski Najjaci 
+2025-08-01T17:56:02.565+02:00  INFO 11972 --- [RestStorage] [http-nio-8080-exec-8] c.e.R.InventoryService.InventoryService  : Item saved under ID : 23
+2025-08-01T17:57:07.699+02:00  INFO 11972 --- [RestStorage] [http-nio-8080-exec-1] c.e.R.InventoryService.InventoryService  : Searching for an item under ID: 23
+2025-08-01T17:57:07.702+02:00  INFO 11972 --- [RestStorage] [http-nio-8080-exec-1] c.e.R.InventoryService.InventoryService  : Deleted an item: 23
+2025-08-01T18:00:04.244+02:00  INFO 11972 --- [RestStorage] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-01T18:00:04.275+02:00  INFO 11972 --- [RestStorage] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-01T18:00:04.277+02:00  INFO 11972 --- [RestStorage] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-01T18:00:04.278+02:00  INFO 11972 --- [RestStorage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-01T18:00:04.282+02:00  INFO 11972 --- [RestStorage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
