@@ -1,19 +1,19 @@
 package com.example.RestStorage.InventoryService;
+import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
-import ch.qos.logback.core.util.StringUtil;
 import com.example.RestStorage.model.Inventory;
-import com.example.RestStorage.model.Location;
+
 import com.example.RestStorage.repository.InventoryRepository;
-import org.springframework.stereotype.Service;
-import org.springframework.util.StringUtils;
+
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
+
 
 public class InventoryService {
 
@@ -54,6 +54,9 @@ public class InventoryService {
     }
 
 
+
+
+
 //    private void validatorString(String name, String category){
 //        if (StringUtils.isEmpty(string)) {
 //            throw new RuntimeException("String must not be null");
@@ -69,6 +72,11 @@ public class InventoryService {
 //    private void validator11000(double price) {
 //
 //    }
+
+
+    public List<Inventory> getLast10Inventories() {
+        return repository.findTop10ByOrderByTimestampDesc();
+    }
 
 
     public List<Inventory> searchByName(String name) {
@@ -96,15 +104,6 @@ public class InventoryService {
         logger.info("Searching for an item under ID: {}" ,id);
         return repository.findById(id);
     }
-
-
-
-
-//    public  Optional<Inventory> findByName(String name) {
-//        return repository.findBy()
-//    }
-
-
 
 
 

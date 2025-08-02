@@ -4,9 +4,12 @@ package com.example.RestStorage.controller;
 import com.example.RestStorage.InventoryService.InventoryService;
 import com.example.RestStorage.model.Inventory;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.Instant;
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -16,11 +19,17 @@ import org.slf4j.LoggerFactory;
 
 @RestController
 @RequestMapping("/api/inventory")
+
 public class InventoryController {
 
     private static final Logger logger =LoggerFactory.getLogger(InventoryController.class);
 
     private final InventoryService service;
+
+    @GetMapping("/latest")
+    public List<Inventory> getLatestInventories() {
+        return service.getLast10Inventories();
+    }
 
 
     public InventoryController(InventoryService service) {
@@ -67,6 +76,7 @@ public class InventoryController {
 
     @PostMapping
     public Inventory createInventory(@RequestBody Inventory inventory) {
+        inventory.setTimestamp(Date.from(Instant.now()));
         return service.save(inventory);
     }
 
@@ -76,9 +86,6 @@ public class InventoryController {
 
         Optional<Inventory> optionalInventory = service.findById(id);
 
-
-
-
         if (optionalInventory.isPresent()) {
             Inventory existing = optionalInventory.get();
             existing.setName(updated.getName());
@@ -86,6 +93,7 @@ public class InventoryController {
             existing.setCount(updated.getCount());
             existing.setPrice(updated.getPrice());
             existing.setLocation(updated.getLocation());
+            existing.setTimestamp(Date.from(Instant.now()));
 
             logger.info("Updated item with ID  : {}" , existing.getId());
             Inventory saved = service.save(existing);

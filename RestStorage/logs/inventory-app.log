@@ -1,0 +1,57 @@
+2025-08-02T02:10:48.160+02:00  INFO 12616 --- [main] c.e.R.RestStorageApplicationTests        : Starting RestStorageApplicationTests using Java 17.0.12 with PID 12616 (started by kosta in D:\IntelliJProjects\Programski Jezici\RestStorage)
+2025-08-02T02:10:48.161+02:00  INFO 12616 --- [main] c.e.R.RestStorageApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2025-08-02T02:10:48.406+02:00  INFO 12616 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-02T02:10:48.433+02:00  INFO 12616 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interfaces.
+2025-08-02T02:10:48.628+02:00  INFO 12616 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-02T02:10:48.656+02:00  INFO 12616 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2025-08-02T02:10:48.807+02:00  INFO 12616 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-02T02:10:48.893+02:00  INFO 12616 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1de13f34
+2025-08-02T02:10:48.895+02:00  INFO 12616 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-02T02:10:48.903+02:00  INFO 12616 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-08-02T02:10:48.904+02:00  WARN 12616 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-02T02:10:49.165+02:00  INFO 12616 --- [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.example.RestStorage.model.Inventory (class must be instantiated by Interceptor)
+2025-08-02T02:10:49.246+02:00  INFO 12616 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-08-02T02:10:49.250+02:00  INFO 12616 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-02T02:10:49.454+02:00  WARN 12616 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-02T02:10:49.608+02:00  INFO 12616 --- [main] c.e.R.RestStorageApplicationTests        : Started RestStorageApplicationTests in 1.572 seconds (process running for 1.985)
+2025-08-02T02:10:49.716+02:00  INFO 12616 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-02T02:10:49.717+02:00  INFO 12616 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-02T02:10:49.722+02:00  INFO 12616 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-02T02:15:25.504+02:00  INFO 20240 --- [main] c.e.R.RestStorageApplicationTests        : Starting RestStorageApplicationTests using Java 17.0.12 with PID 20240 (started by kosta in D:\IntelliJProjects\Programski Jezici\RestStorage)
+2025-08-02T02:15:25.504+02:00  INFO 20240 --- [main] c.e.R.RestStorageApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2025-08-02T02:15:25.748+02:00  INFO 20240 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-02T02:15:25.777+02:00  INFO 20240 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interfaces.
+2025-08-02T02:15:25.961+02:00  INFO 20240 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-02T02:15:25.991+02:00  INFO 20240 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2025-08-02T02:15:26.142+02:00  INFO 20240 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-02T02:15:26.229+02:00  INFO 20240 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6562cc23
+2025-08-02T02:15:26.230+02:00  INFO 20240 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-02T02:15:26.237+02:00  INFO 20240 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-08-02T02:15:26.239+02:00  WARN 20240 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-02T02:15:26.497+02:00  INFO 20240 --- [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.example.RestStorage.model.Inventory (class must be instantiated by Interceptor)
+2025-08-02T02:15:26.565+02:00  INFO 20240 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-08-02T02:15:26.569+02:00  INFO 20240 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-02T02:15:26.767+02:00  WARN 20240 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-02T02:15:26.917+02:00  INFO 20240 --- [main] c.e.R.RestStorageApplicationTests        : Started RestStorageApplicationTests in 1.535 seconds (process running for 1.936)
+2025-08-02T02:15:27.016+02:00  INFO 20240 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-02T02:15:27.017+02:00  INFO 20240 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-02T02:15:27.021+02:00  INFO 20240 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-02T02:25:20.913+02:00  INFO 22804 --- [main] c.e.R.RestStorageApplicationTests        : Starting RestStorageApplicationTests using Java 17.0.12 with PID 22804 (started by kosta in D:\IntelliJProjects\Programski Jezici\RestStorage)
+2025-08-02T02:25:20.914+02:00  INFO 22804 --- [main] c.e.R.RestStorageApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2025-08-02T02:25:21.163+02:00  INFO 22804 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-02T02:25:21.187+02:00  INFO 22804 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interfaces.
+2025-08-02T02:25:21.376+02:00  INFO 22804 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-02T02:25:21.407+02:00  INFO 22804 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2025-08-02T02:25:21.572+02:00  INFO 22804 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-02T02:25:21.658+02:00  INFO 22804 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@36d582cb
+2025-08-02T02:25:21.659+02:00  INFO 22804 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-02T02:25:21.667+02:00  INFO 22804 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-08-02T02:25:21.668+02:00  WARN 22804 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-02T02:25:21.949+02:00  INFO 22804 --- [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.example.RestStorage.model.Inventory (class must be instantiated by Interceptor)
+2025-08-02T02:25:22.020+02:00  INFO 22804 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-08-02T02:25:22.024+02:00  INFO 22804 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-02T02:25:22.231+02:00  WARN 22804 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-02T02:25:22.390+02:00  INFO 22804 --- [main] c.e.R.RestStorageApplicationTests        : Started RestStorageApplicationTests in 1.603 seconds (process running for 2.009)
+2025-08-02T02:25:22.502+02:00  INFO 22804 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-02T02:25:22.503+02:00  INFO 22804 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-02T02:25:22.507+02:00  INFO 22804 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

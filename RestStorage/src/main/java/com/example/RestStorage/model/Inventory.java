@@ -2,15 +2,20 @@ package com.example.RestStorage.model;
 
 
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.util.Date;
+
+@AllArgsConstructor
+@NoArgsConstructor
 
 
 @Entity
 @Getter
 @Setter
-@AllArgsConstructor
-@NoArgsConstructor
-@Builder
 
 public class Inventory {
 
@@ -31,6 +36,10 @@ public class Inventory {
 
     private double totalPrice;
 
+    private Date timestamp;
+
+
+
 
 @Enumerated(EnumType.STRING)
     private Location location;
@@ -48,7 +57,7 @@ public class Inventory {
 
 
 
-    public Inventory(String name, String category , int count , double price, Location location) {
+    public Inventory(String name, String category , int count , double price, Location location, Date timestamp) {
         this.name = name;
 
         this.category = category;
@@ -61,16 +70,15 @@ public class Inventory {
 
         this.totalPrice = price*count;
 
+        this.timestamp = timestamp;
+
     }
 
 
 
+
+
+
 }
-//    @Column(updatable = false)
-//    private java.time.LocalDateTime createdAt;
 
 
-//    @PrePersist
-//    protected void onCreate() {
-//        this.createdAt = java.time.LocalDateTime.now();
-//    }
